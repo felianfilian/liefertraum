@@ -52,9 +52,18 @@ body {
   min-width: 60%;
   min-height: 300px;
 
-  padding: 10px;
-
   background-color: rgb(212, 255, 255);
+}
+
+.restaurant-header {
+  height: 30vh;
+
+  background-image: url(img/pizza.jpg);
+  background-size: 100%;
+}
+
+.restaurant-menu {
+  padding: 10px;
 }
 
 .order-section {
