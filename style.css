@@ -50,7 +50,7 @@ body {
   flex-wrap: wrap;
 
   min-width: 60%;
-  min-height: 300px;
+  min-height: 300vh;
 
   background-color: rgb(212, 255, 255);
 }
@@ -71,6 +71,7 @@ body {
   flex-wrap: wrap;
 
   min-width: 30%;
+  height: 80vh;
 
   padding: 10px;
 
