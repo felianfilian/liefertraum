@@ -10,6 +10,16 @@ body {
   font-size: 20px;
 }
 
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 /* header */
 
 .header-section {
@@ -52,23 +62,50 @@ body {
 
 .restaurant-section {
   flex-grow: 2;
-  flex-wrap: wrap;
 
-  min-width: 60%;
+  min-width: 400px;
   min-height: 300vh;
 
   background-color: rgb(212, 255, 255);
 }
 
 .restaurant-header {
+  position: relative;
+
   height: 30vh;
+
+  margin-bottom: 30px;
 
   background-image: url(img/pizza.jpg);
   background-size: 100%;
 }
 
+.restaurant-logo {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+
+  height: 70px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* menu */
+
 .restaurant-menu {
   padding: 10px;
+}
+
+.menu-item {
+  padding: 10px;
+
+  background-color: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.6);
 }
 
 .txt-price {
@@ -79,9 +116,8 @@ body {
 
 .order-section {
   flex-grow: 1;
-  flex-wrap: wrap;
 
-  min-width: 30%;
+  min-width: 200px;
   height: 80vh;
 
   padding: 10px;
