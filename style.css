@@ -74,7 +74,7 @@ h3 {
 
   height: 30vh;
 
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 
   background-image: url(img/pizza.jpg);
   background-size: 100%;
@@ -95,10 +95,22 @@ h3 {
   border-radius: 50%;
 }
 
+/* rating section */
+
+.rating {
+  display: flex;
+
+  margin: 10px 0;
+}
+
+.rating img {
+  height: 30px;
+}
+
 /* menu */
 
 .restaurant-menu {
-  padding: 10px;
+  padding: 32px;
 }
 
 .menu-item {
@@ -120,7 +132,7 @@ h3 {
   min-width: 200px;
   height: 80vh;
 
-  padding: 10px;
+  padding: 32px;
 
   background-color: rgb(255, 142, 142);
 }
