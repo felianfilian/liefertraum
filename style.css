@@ -64,9 +64,8 @@ h3 {
   flex-grow: 2;
 
   min-width: 400px;
-  min-height: 300vh;
 
-  background-color: rgb(212, 255, 255);
+  background-color: rgb(234, 252, 252);
 }
 
 .restaurant-header {
@@ -86,7 +85,7 @@ h3 {
   left: 0;
   right: 0;
 
-  height: 70px;
+  height: 100px;
 
   margin-left: auto;
   margin-right: auto;
@@ -118,6 +117,7 @@ h3 {
 
   position: relative;
 
+  margin: 16px 0;
   padding: 10px;
 
   background-color: #fff;
@@ -133,8 +133,7 @@ h3 {
 
   padding: 0 8px;
 
-  border-left: 2px solid #000;
-  border-bottom: 2px solid #000;
+  outline: 2px solid #000;
   font-size: 40px;
   text-decoration: none;
 }
@@ -149,11 +148,15 @@ h3 {
   flex-grow: 1;
 
   min-width: 200px;
-  height: 80vh;
 
   padding: 32px;
 
-  background-color: rgb(255, 142, 142);
+  background-color: rgb(253, 253, 253);
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .order-sum {
