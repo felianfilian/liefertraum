@@ -1,7 +1,9 @@
 let items = ["Cheeseburger"];
 let prices = [5.6];
 
+let orderNames = [];
 let orderPrices = [];
+let orderAmounts = [];
 
 let orderItems = document.getElementById("order-items");
 let totalSum = document.getElementById("total-sum");
@@ -25,18 +27,32 @@ und bestelle Dein Menu
 </div>
 `;
 
-function addItem() {
-  orderPrices.push(prices[0]);
+function addItem(orderName, orderPrice) {
+  if (orderNames.includes(orderName)) {
+    let orderNameIndex = orderNames.indexOf(orderName);
+    orderAmounts[orderNameIndex]++;
+    orderPrices[orderNameIndex] = orderPrice * orderAmounts[orderNameIndex];
+  } else {
+    orderAmounts.push(1);
+    orderNames.push(orderName);
+    orderPrices.push(orderPrice);
+  }
 
-  orderItems.innerHTML += `
+  showShoppingCart(orderNames, orderPrices, orderAmounts);
+  showTotalSum();
+}
+
+function showShoppingCart(orderNames, orderPrices, orderAmounts) {
+  orderItems.innerHTML = "";
+  for (let i = 0; i < orderNames.length; i++) {
+    orderItems.innerHTML += `
   <div class="order-item">
-    <p>1x</p>
-    <p>${items[0]}</p>
-    <p>${prices[0].toFixed(2)} €</p>
+    <p>${orderAmounts[i]}x</p>
+    <p>${orderNames[i]}</p>
+    <p>${orderPrices[i].toFixed(2)} €</p>
   </div>
   `;
-
-  showTotalSum();
+  }
 }
 
 function showTotalSum() {

@@ -157,7 +157,7 @@ h3 {
   padding: 16px;
 
   background-color: rgb(239, 239, 239);
-  transition: all 225ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .order-item {
@@ -171,3 +171,12 @@ h3 {
 }
 
 /* RESPONSIVE */
+
+@media (max-width: 960px) {
+  .restaurant-section {
+    width: 100vw;
+  }
+  .order-section {
+    display: none;
+  }
+}
