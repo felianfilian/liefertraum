@@ -26,6 +26,9 @@ h3 {
   display: flex;
   align-items: center;
 
+  height: 100px;
+
+  box-sizing: border-box;
   padding: 10px;
 
   background-color: rgb(239, 121, 25);
@@ -145,6 +148,11 @@ h3 {
 /* order section */
 
 .order-section {
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  right: 0;
+
   flex-grow: 1;
 
   min-width: 200px;
@@ -152,6 +160,7 @@ h3 {
   padding: 32px;
 
   background-color: rgb(253, 253, 253);
+  transition: all 225ms ease-in-out;
 }
 
 .order-item {
@@ -163,3 +172,5 @@ h3 {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
 }
+
+/* RESPONSIVE */
