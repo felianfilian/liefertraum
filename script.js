@@ -50,6 +50,7 @@ function showShoppingCart(orderNames, orderPrices, orderAmounts) {
     <p>${orderAmounts[i]}x</p>
     <p>${orderNames[i]}</p>
     <p>${orderPrices[i].toFixed(2)} €</p>
+    <img class="btn-bucket" src="img/bucket-red.png" alt="">
   </div>
   `;
   }

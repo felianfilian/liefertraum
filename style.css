@@ -163,6 +163,12 @@ h3 {
 .order-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.btn-bucket {
+  height: 24px;
+  cursor: pointer;
 }
 
 .order-sum {
