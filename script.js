@@ -6,6 +6,15 @@ let orderPrices = [];
 let orderItems = document.getElementById("order-items");
 let totalSum = document.getElementById("total-sum");
 
+window.onscroll = function () {
+  let orderSection = document.querySelector(".order-section");
+  if (window.scrollY > 0) {
+    orderSection.style = "top: 0";
+  } else {
+    orderSection.style = "top: 100px;";
+  }
+};
+
 orderItems.innerHTML = `
 <div style="text-align: center;">
 <img src="img/bag.png">
