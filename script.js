@@ -8,14 +8,14 @@ let orderAmounts = [];
 let orderItems = document.getElementById("order-items");
 let totalSum = document.getElementById("total-sum");
 
-window.onscroll = function () {
-  let orderSection = document.querySelector(".order-section");
-  if (window.scrollY > 0) {
-    orderSection.style = "top: 0";
-  } else {
-    orderSection.style = "top: 100px;";
-  }
-};
+// window.onscroll = function () {
+//   let orderSection = document.querySelector(".order-section");
+//   if (window.scrollY > 0) {
+//     orderSection.style = "top: 0";
+//   } else {
+//     orderSection.style = "top: 100px;";
+//   }
+// };
 
 orderItems.innerHTML = `
 <div style="text-align: center;">
@@ -49,7 +49,7 @@ function showShoppingCart(orderNames, orderPrices, orderAmounts) {
   <div class="order-item">
     <p>${orderAmounts[i]}x</p>
     <p>${orderNames[i]}</p>
-    <p>${orderPrices[i].toFixed(2)} €</p>
+    <p>${orderPrices[i].toFixed(2).replace(".", ",")} €</p>
     <img class="btn-bucket" src="img/bucket-red.png" alt="">
   </div>
   `;
@@ -63,6 +63,6 @@ function showTotalSum() {
   }
 
   totalSum.innerHTML = `
-  <b>Gesamt ${sum.toFixed(2)} €</b>
+  <b>Gesamt ${sum.toFixed(2).replace(".", ",")} €</b>
   `;
 }

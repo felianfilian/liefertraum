@@ -64,7 +64,8 @@ h3 {
 }
 
 .restaurant-section {
-  width: 70vw;
+  width: 70%;
+  min-height: 3000px;
 
   background-color: rgb(234, 252, 252);
 }
@@ -146,12 +147,13 @@ h3 {
 /* order section */
 
 .order-section {
-  position: fixed;
-  top: 100px;
-  bottom: 0;
-  right: 0;
+  position: sticky;
+  top: 0;
+  /* bottom: 0;
+  right: 0; */
 
-  width: 30vw;
+  width: 30%;
+  height: 100vh;
 
   box-sizing: border-box;
   padding: 16px;
