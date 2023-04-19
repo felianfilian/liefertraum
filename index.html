@@ -1,89 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liefertraum</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liefertraum</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="header-section">
-    <div class="logo">
-      <img class="arrow-left" src="img/arrow-left.png" alt="">
-      <img class="logo01" src="img/logo01.png" alt="">
-      <span class="logo-text">Liefertraum</span>
+  <body>
+    <div class="header-section">
+      <div class="logo">
+        <img class="arrow-left" src="img/arrow-left.png" alt="" />
+        <img class="logo01" src="img/logo01.png" alt="" />
+        <span class="logo-text">Liefertraum</span>
+      </div>
     </div>
 
-  </div>
+    <div class="main-section">
+      <div class="restaurant-section">
+        <div class="restaurant-header" alt="">
+          <img src="img/pizza-logo.png" alt="" class="restaurant-logo" />
+        </div>
+        <div class="restaurant-menu">
+          <h2>Pizza Della Veritas</h2>
+          <div class="rating">
+            <img src="img/star03.png" alt="" />
+            <img src="img/star03.png" alt="" />
+            <img src="img/star03.png" alt="" />
+            <img src="img/star03.png" alt="" />
+            <img src="img/star02.png" alt="" />
+          </div>
 
-  <div class="main-section">
-    <div class="restaurant-section">
-      <div class="restaurant-header" alt="">
-        <img src="img/pizza-logo.png" alt="" class="restaurant-logo">
+          <div class="menu-item">
+            <a class="btn-add-item" onclick="addItem('Cheeseburger', 5.60)"
+              >+</a
+            >
+            <h3>Cheeseburger</h3>
+            <p>100g Rindfleischpatty, Käse, Hamburgersoße und Ketchup</p>
+            <i>Optional Gewürzgurken</i>
+            <p class="txt-price">5,60 €</p>
+          </div>
+
+          <div class="menu-item">
+            <a class="btn-add-item" onclick="addItem('Chicken Nuggets', 4.90)"
+              >+</a
+            >
+            <h3>Chicken Nuggets</h3>
+            <p>Knusprige Nuggets vom Hähnchen</p>
+            <i>Optional Chili Soße</i>
+            <p class="txt-price">5,60 €</p>
+          </div>
+
+          <div class="menu-item">
+            <a class="btn-add-item" onclick="addItem('Cheeseburger', 5.60)"
+              >+</a
+            >
+            <h3>Cheeseburger</h3>
+            <p>100g Rindfleischpatty, Käse, Hamburgersoße und Ketchup</p>
+            <i>Optional Gewürzgurken</i>
+            <p class="txt-price">5,60 €</p>
+          </div>
+
+          <div class="menu-item">
+            <a class="btn-add-item" onclick="addItem('Chicken Nuggets', 4.90)"
+              >+</a
+            >
+            <h3>Chicken Nuggets</h3>
+            <p>Knusprige Nuggets vom Hähnchen</p>
+            <i>Optional Chili Soße</i>
+            <p class="txt-price">5,60 €</p>
+          </div>
+        </div>
       </div>
-      <div class="restaurant-menu">
-        <h2>Pizza Della Veritas</h2>
-        <div class="rating">
-          <img src="img/star03.png" alt="">
-          <img src="img/star03.png" alt="">
-          <img src="img/star03.png" alt="">
-          <img src="img/star03.png" alt="">
-          <img src="img/star02.png" alt="">
+      <div class="order-section">
+        <p><b>Warenkorb</b></p>
+        <p id="order-items">
+          <!-- order items -->
+        </p>
+        <div class="order-sum">
+          <p>Zwischensumme 0,00 €</p>
+          <p id="total-sum"><b>Gesamt 0,00 €</b></p>
         </div>
-
-        <div class="menu-item">
-          <a class="btn-add-item" href="#" onclick="addItem('Cheeseburger', 5.60)">+</a>
-          <h3>Cheeseburger</h3>
-          <p>100g Rindfleischpatty, Käse, Hamburgersoße und Ketchup</p>
-          <i>Optional Gewürzgurken</i>
-          <p class="txt-price">5,60 €</p>
-        </div>
-
-        <div class="menu-item">
-          <a class="btn-add-item" href="#" onclick="addItem('Chicken Nuggets', 4.90)">+</a>
-          <h3>Chicken Nuggets</h3>
-          <p>Knusprige Nuggets vom Hähnchen</p>
-          <i>Optional Chili Soße</i>
-          <p class="txt-price">5,60 €</p>
-        </div>
-
-        <div class="menu-item">
-          <a class="btn-add-item" href="#" onclick="addItem('Cheeseburger', 5.60)">+</a>
-          <h3>Cheeseburger</h3>
-          <p>100g Rindfleischpatty, Käse, Hamburgersoße und Ketchup</p>
-          <i>Optional Gewürzgurken</i>
-          <p class="txt-price">5,60 €</p>
-        </div>
-
-        <div class="menu-item">
-          <a class="btn-add-item" href="#" onclick="addItem('Chicken Nuggets', 4.90)">+</a>
-          <h3>Chicken Nuggets</h3>
-          <p>Knusprige Nuggets vom Hähnchen</p>
-          <i>Optional Chili Soße</i>
-          <p class="txt-price">5,60 €</p>
-        </div>
-
       </div>
-
     </div>
-    <div class="order-section">
-      <p><b>Warenkorb</b></p>
-      <p id="order-items">
-        <!-- order items -->
-      </p>
-      <div class="order-sum">
-        <p>Zwischensumme 0,00 €</p>
-        <p id="total-sum"><b>Gesamt 0,00 €</b></p>
-      </div>
 
-    </div>
-  </div>
-
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

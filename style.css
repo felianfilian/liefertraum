@@ -135,6 +135,7 @@ h3 {
 
   padding: 0 8px;
 
+  cursor: pointer;
   outline: 2px solid #000;
   font-size: 40px;
   text-decoration: none;
