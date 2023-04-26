@@ -118,7 +118,7 @@ h3 {
 .rating {
   display: flex;
 
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .rating img {
@@ -209,11 +209,34 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 16px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.btn-bucket {
-  height: 24px;
+.amount-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  width: 30px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #000;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+.btn-amount:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .order-sum {
@@ -221,6 +244,19 @@ h3 {
   border-bottom: 2px solid #000;
 }
 
+.mobile-order-section {
+  display: none;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0 10px;
+
+  background-color: #fff;
+  border-top: 2px solid #000;
+}
 /* RESPONSIVE */
 
 @media (max-width: 960px) {
@@ -229,5 +265,9 @@ h3 {
   }
   .order-section {
     display: none;
+  }
+
+  .mobile-order-section {
+    display: flex;
   }
 }

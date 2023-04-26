@@ -28,7 +28,8 @@
         </div>
         <div class="restaurant-menu">
           <h2>Pizza Della Veritas</h2>
-          <div class="rating">
+          <p>Die beste Pizza der ganzen Stadt</p>
+          <div class="rating mb-10">
             <img src="img/star03.png" alt="" />
             <img src="img/star03.png" alt="" />
             <img src="img/star03.png" alt="" />
@@ -52,13 +53,23 @@
           </div>
 
           <div class="menu-item">
-            <a class="btn-add-item" onclick="addItem('Cheeseburger', 5.60)"
+            <a class="btn-add-item" onclick="addItem('Pizza Margherita', 6.90)"
               >+</a
             >
-            <h3>Cheeseburger</h3>
-            <p>100g Rindfleischpatty, Käse, Hamburgersoße und Ketchup</p>
-            <i>Optional Gewürzgurken</i>
-            <p class="txt-price">5,60 €</p>
+            <h3>Pizza Margherita</h3>
+            <p>mit würziger Tomatensoße und Mozarella</p>
+            <i>Optional Peperonis</i>
+            <p class="txt-price">6,90 €</p>
+          </div>
+
+          <div class="menu-item">
+            <a class="btn-add-item" onclick="addItem('Pizza Salami', 9.90)"
+              >+</a
+            >
+            <h3>Pizza Salami</h3>
+            <p>mit Salami, würziger Tomatensoße und Mozarella belegt</p>
+            <i>Optional Peperonis</i>
+            <p class="txt-price">9,90 €</p>
           </div>
 
           <div class="menu-item">
@@ -72,23 +83,11 @@
           </div>
 
           <div class="menu-item">
-            <a class="btn-add-item" onclick="addItem('Cheeseburger', 5.60)"
-              >+</a
-            >
-            <h3>Cheeseburger</h3>
-            <p>100g Rindfleischpatty, Käse, Hamburgersoße und Ketchup</p>
-            <i>Optional Gewürzgurken</i>
-            <p class="txt-price">5,60 €</p>
-          </div>
-
-          <div class="menu-item">
-            <a class="btn-add-item" onclick="addItem('Chicken Nuggets', 4.90)"
-              >+</a
-            >
-            <h3>Chicken Nuggets</h3>
-            <p>Knusprige Nuggets vom Hähnchen</p>
-            <i>Optional Chili Soße</i>
-            <p class="txt-price">5,60 €</p>
+            <a class="btn-add-item" onclick="addItem('Salat', 5.60)">+</a>
+            <h3>Salat</h3>
+            <p>Frischer knackiger Salat mit dressing nach Wahl</p>
+            <i>Optional Schafskäse</i>
+            <p class="txt-price">7,90 €</p>
           </div>
         </div>
       </div>
@@ -102,6 +101,14 @@
           <p id="delivery-sum">Lieferkosten 0,00 €</p>
           <p id="total-sum"><b>Gesamt 0,00 €</b></p>
         </div>
+      </div>
+    </div>
+
+    <div class="mobile-order-section">
+      <div>
+        <p id="m-sub-sum">Zwischensumme 0,00 €</p>
+        <p id="m-delivery-sum">Lieferkosten 0,00 €</p>
+        <p id="m-total-sum"><b>Gesamt 0,00 €</b></p>
       </div>
     </div>
 
