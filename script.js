@@ -6,16 +6,9 @@ let orderPrices = [];
 let orderAmounts = [];
 
 let orderItems = document.getElementById("order-items");
+let subSum = document.getElementById("sub-sum");
+let deliverySum = document.getElementById("delivery-sum");
 let totalSum = document.getElementById("total-sum");
-
-// window.onscroll = function () {
-//   let orderSection = document.querySelector(".order-section");
-//   if (window.scrollY > 0) {
-//     orderSection.style = "top: 0";
-//   } else {
-//     orderSection.style = "top: 100px;";
-//   }
-// };
 
 orderItems.innerHTML = `
 <div style="text-align: center;">
